@@ -1,6 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <m-button>基础按钮</m-button>
+  <m-button type="primary">主要按钮</m-button>
+  <m-button type="success" round>圆角按钮</m-button>
 </template>
 
 <script>
