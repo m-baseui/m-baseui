@@ -1,0 +1,45 @@
+// const navbar = require('./config/navbar')
+// const sidebar = require('./config/sidebar')
+
+const { defaultTheme } = require('@vuepress/theme-default')
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+const { path } = require('@vuepress/utils')
+
+module.exports = {
+  title: 'm-baseui',
+  description: 'm-baseui Component library with Vue3',
+  base: '/', // 这是部署到github相关的配置
+  theme: defaultTheme({
+    // 在这里进行配置
+    navbar: [
+      {
+        text: 'Foo',
+        link: '/foo/',
+      },
+      {
+        text: 'Group',
+        children: ['/group/foo.md', '/group/bar.md'],
+      }
+    ],
+    sidebar: [
+      {
+        text: '通用',
+        children: [
+          {
+            text: 'Button 组件',
+            link: '/componentDocs/Button'
+          },
+          {
+            text: 'Input 组件',
+            link: '/componentDocs/Input'
+          }
+        ]
+      }
+    ]
+  }),
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    })
+  ]
+}
