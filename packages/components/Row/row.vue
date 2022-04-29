@@ -19,6 +19,7 @@ export default {
 .row-default{
   width:100%;
   height:auto;
+  margin-bottom: 20px;
   box-sizing: border-box;
   overflow: hidden;
 }
