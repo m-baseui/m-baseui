@@ -13,12 +13,16 @@ module.exports = {
     // 在这里进行配置
     navbar: [
       {
-        text: 'Foo',
-        link: '/foo/',
+        text: '首页',
+        link: '/'
       },
       {
-        text: 'Group',
-        children: ['/group/foo.md', '/group/bar.md'],
+        text: '组件',
+        link: '/componentDocs/Install'
+      },
+      {
+        text: 'github',
+        link: 'https://github.com/m-baseui/m-baseui'
       }
     ],
     sidebar: [
