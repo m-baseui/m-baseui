@@ -23,6 +23,24 @@ module.exports = {
     ],
     sidebar: [
       {
+        text: '快速上手',
+        children: [
+          {
+            text: '安装使用',
+            link: '/componentDocs/Install'
+          }
+        ]
+      },
+      {
+        text: '常规',
+        children: [
+          {
+            text: 'Layout 布局',
+            link: '/componentDocs/Layout'
+          }
+        ]
+      },
+      {
         text: '通用',
         children: [
           {
