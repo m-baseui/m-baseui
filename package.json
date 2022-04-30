@@ -18,8 +18,7 @@
     "lib": "vue-cli-service build  --target lib --name m-baseui --dest lib packages/index.js",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^3.6.5",
