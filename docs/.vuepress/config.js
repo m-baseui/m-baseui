@@ -1,7 +1,7 @@
 const navbar = require('./config/navbar')
 const sidebar = require('./config/sidebar')
 
-const { defaultTheme } = require('@vuepress/theme-default')
+const { defaultTheme } = require('vuepress')
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 const { path } = require('@vuepress/utils')
 
