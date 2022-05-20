@@ -1,6 +1,6 @@
 {
   "name": "m-baseui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "m-baseui Component library with Vue3",
   "main": "lib/m-baseui.umd.min.js",
   "private": false,
@@ -15,8 +15,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build  --target lib --name m-baseui --dest lib packages/index.js",
     "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build  --target lib --name m-baseui --dest lib packages/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
