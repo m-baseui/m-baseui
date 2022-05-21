@@ -17,7 +17,9 @@ module.exports = {
   theme: defaultTheme({
     // 在这里进行配置
     navbar,
-    sidebar
+    sidebar,
+    lastUpdated: false,
+    contributors: false
   }),
   plugins: [
     registerComponentsPlugin({

@@ -1,7 +1,8 @@
 import { defineClientConfig  } from '@vuepress/client'
 
 // 导入组件库
-import mBaseui from '../../packages'
+import mBaseui from '../../packages';
+import './public/iconfont/iconfont.css';
 
 export default defineClientConfig ({
   enhance({ app }){
