@@ -14,7 +14,11 @@ module.exports = [
       {
         text: 'Layout 布局',
         link: '/componentDocs/Layout'
-      }
+      },
+      {
+        text: 'Icon 图标',
+        link: '/componentDocs/Icon'
+      },
     ]
   },
   {
