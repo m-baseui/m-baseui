@@ -8,7 +8,7 @@
       :value="modelValue"
       @input="iptChange"
       :disabled="disabled">
-    <span class="m-icon-close" v-if="clearable && modelValue" @click="clear">x</span>
+    <i class="iconfont icon-close" v-if="clearable && modelValue" @click="clear"></i>
   </div>
 </template>
 
