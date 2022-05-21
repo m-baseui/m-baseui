@@ -9,36 +9,65 @@
   color: #333;
   cursor: pointer;
 }
-.is-disabled{
-  color: #c0c4cc;
-  cursor: not-allowed;
-  background-color: #fff;
-  border-color: #ebeef5;
+.m-button--default{
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  color: #333;
+  &:hover {
+    opacity: 0.8;
+    border-color: $primary;
+    color: $primary;
+  }
 }
+
 .m-button--primary{
   color: #fff;
   background-color: $primary;
   border-color: $primary;
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+  }
 }
 .m-button--success {
   color: #fff;
   background-color: $success;
   border-color: $success;
-}
-.m-button--info {
-  color: #fff;
-  background-color: $info;
-  border-color: $info;
-}
-.m-button--warning {
-  color: #fff;
-  background-color: $warning;
-  border-color: $warning;
+  &:hover {
+    opacity: 0.8;
+    background-color: $success;
+    color: #fff;
+  }
 }
 .m-button--danger {
   color: #fff;
   background-color: $danger;
   border-color: $danger;
+  &:hover {
+    color: #fff;
+    border-color: $danger;
+    opacity: 0.8;
+  }
+}
+.m-button--info {
+  color: #fff;
+  background-color: $info;
+  border-color: $info;
+  &:hover {
+    color: #fff;
+    border-color: $info;
+    opacity: 0.8;
+  }
+}
+.m-button--warning {
+  color: #fff;
+  background-color: $warning;
+  border-color: $warning;
+  &:hover {
+    color: #fff;
+    border-color: $warning;
+    opacity: 0.8;
+  }
 }
 .m-button--text {
   border-color: transparent;
@@ -46,6 +75,46 @@
   background: transparent;
   padding-left: 0;
   padding-right: 0;
+}
+// 禁止
+.is-disabled{
+  color: #fff;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ebeef5;
+}
+.m-button--default.is-disabled{
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ebeef5;
+}
+.m-button--primary.is-disabled{
+  background-color: #a0cfff;
+  border-color: #a0cfff;
+}
+.m-button--success.is-disabled{
+  background-color: #b3e19d;
+  border-color: #b3e19d;
+}
+.m-button--danger.is-disabled{
+  background-color: #fab6b6;
+  border-color: #fab6b6;
+}
+.m-button--info.is-disabled{
+  background-color: #c8c9cc;
+  border-color: #c8c9cc;
+}
+.m-button--warning.is-disabled{
+  background-color: #f3d19e;
+  border-color: #f3d19e;
+}
+.m-button--text.is-disabled{
+  cursor: no-drop;
+  border: 1px solid #fff;
+  background: none;
+  opacity: .5;
+  color: #0e80eb;
 }
 // 圆角
 .is-round{

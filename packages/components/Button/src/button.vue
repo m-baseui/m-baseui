@@ -4,7 +4,14 @@
     :class="styleClass"
     :disabled="disabled"
     :round="round">
-    <slot></slot>
+    <i :class="isIconClass" v-if="leftIcon"></i>
+    <span :style="{
+      'margin-left': leftIcon ? '4px' : '0',
+      'margin-right':rightIcon ? '4px' : '0'
+      }">
+      <slot></slot>
+    </span>
+    <i :class="isIconClass" v-if="rightIcon"></i>
   </button>
 </template>
 
@@ -27,10 +34,11 @@ export default {
     round: {
       type: Boolean,
       default: false
-    }
+    },
+    leftIcon: String,
+    rightIcon: String,
   },
   setup(props) {
-
     const styleClass = computed(() => {
       return {
         [`m-button--${props.type}`]: props.type,
@@ -39,8 +47,16 @@ export default {
       }
     })
 
+    const isIconClass = computed(() => {
+      return [
+        'iconfont',
+        props.leftIcon || props.rightIcon
+      ]
+    })
+
     return {
-      styleClass
+      styleClass,
+      isIconClass
     }
   }
 }
