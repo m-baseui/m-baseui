@@ -33,7 +33,7 @@ export default {
   },
   setup(props) {
     const showCode = ref(false);
-    const sourceCode = ref("dsffassaff");
+    const sourceCode = ref("");
 
     const iconClass = computed(() => {
       return [
@@ -47,9 +47,15 @@ export default {
     }
 
     const getSourceCode = async () => {
-      let msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
-      console.log(msg.default)
-      sourceCode.value = msg.default
+      let msg = ''
+      const isDev = import.meta.env.MODE === "development";
+      if(isDev) {
+        msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
+        sourceCode.value = msg.default
+      } else {
+        msg = await fetch(`./${props.compName}/${props.demoName}.vue`).then(res => res.text())
+        sourceCode.value = msg
+      }
     }
 
     onMounted(() => {

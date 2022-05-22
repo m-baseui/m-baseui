@@ -16,7 +16,6 @@ export default defineClientConfig ({
       const blocks = el.querySelectorAll("pre code");
       
       blocks.forEach((block) => {
-        console.log(block)
         hljs.highlightBlock(block);
       });
     });
