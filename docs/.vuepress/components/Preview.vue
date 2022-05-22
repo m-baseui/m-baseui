@@ -51,10 +51,12 @@ export default {
       const isDev = import.meta.env.MODE === "development";
       if(isDev) {
         msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
+        console.log(msg)
         sourceCode.value = msg.default
       } else {
-        msg = await import(`./${props.compName}/${props.demoName}.vue`)
+        msg = await import(`./${props.compName}/${props.demoName}.vue?raw`)
         console.log(msg)
+        sourceCode.value = msg.default
       }
     }
 
