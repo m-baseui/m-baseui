@@ -6,70 +6,28 @@
 
 #### input 的基础用法
 <br/>
-<Input-Demo1 />
+<div class="source">
+  <Input-Demo1 />
+</div>
+<Preview compName="Input" demoName="Demo1" />
 
-```html
-<template>
-  <m-input v-model="value" placeholder="基本使用"></m-input>
-</template>
-
-<script>
-import { ref } from 'vue';
-export default {
-  setup() {
-    const value = ref('')
-    return {
-      value
-    }
-  }
-}
-</script>
-```
 
 ## 禁用状态
 
 #### 通过 _disabled_ 属性指定是否禁用 input 组件 
 <br/>
-<Input-Demo2 />
+<div class="source">
+  <Input-Demo2 />
+</div>
+<Preview compName="Input" demoName="Demo2" />
 
-```html
-<template>
-  <m-input v-model="value" placeholder="禁用状态" disabled></m-input>
-</template>
-
-<script>
-import { ref } from 'vue';
-export default {
-  setup() {
-    const value = ref('')
-    return {
-      value
-    }
-  }
-}
-</script>
-```
 
 ## 可清空数据
 
 #### 使用 _clearable_ 属性即可得到一个可清空的输入框
 <br/>
 <Input-Demo3 />
-
-```html
-<template>
-  <m-input v-model="value" placeholder="可清空" clearable></m-input>
-</template>
-
-<script>
-import { ref } from 'vue';
-export default {
-  setup() {
-    const value = ref('')
-    return {
-      value
-    }
-  }
-}
-</script>
-```
+<div class="source">
+  <Input-Demo3 />
+</div>
+<Preview compName="Input" demoName="Demo3" />
