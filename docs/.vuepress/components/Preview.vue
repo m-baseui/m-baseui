@@ -53,8 +53,8 @@ export default {
         msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
         sourceCode.value = msg.default
       } else {
-        msg = await fetch(`./${props.compName}/${props.demoName}.vue`).then(res => res.text())
-        sourceCode.value = msg
+        msg = await import(`./${props.compName}/${props.demoName}.vue`)
+        console.log(msg)
       }
     }
 
