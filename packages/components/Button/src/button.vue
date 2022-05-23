@@ -42,6 +42,10 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    size: {
+      type: String,
+      default: "default"
     }
   },
   setup(props) {
@@ -52,7 +56,8 @@ export default {
         [`m-button--${props.type}`]: props.type,
         'is-disabled': props.disabled,
         'is-round': props.round,
-        'is-circle': props.circle
+        'is-circle': props.circle,
+        [`m-button--${props.size}`]: props.size
       }
     })
 

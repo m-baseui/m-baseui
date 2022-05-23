@@ -90,31 +90,36 @@
   border-color: #ebeef5;
 }
 .m-button--primary.is-disabled{
+  color: #fff;
   background-color: #a0cfff;
   border-color: #a0cfff;
 }
 .m-button--success.is-disabled{
+  color: #fff;
   background-color: #b3e19d;
   border-color: #b3e19d;
 }
 .m-button--danger.is-disabled{
+  color: #fff;
   background-color: #fab6b6;
   border-color: #fab6b6;
 }
 .m-button--info.is-disabled{
+  color: #fff;
   background-color: #c8c9cc;
   border-color: #c8c9cc;
 }
 .m-button--warning.is-disabled{
+  color: #fff;
   background-color: #f3d19e;
   border-color: #f3d19e;
 }
 .m-button--text.is-disabled{
   cursor: no-drop;
+  color: #555;
   border: 1px solid #fff;
   background: none;
   opacity: .5;
-  color: #555;
 }
 // 圆角
 .is-round{
@@ -145,4 +150,16 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.m-button--medium{
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.m-button--small{
+  padding: 9px 15px;
+  font-size: 12px;
+}
+.m-button--mini{
+  padding: 7px 15px;
+  font-size: 12px;
 }
