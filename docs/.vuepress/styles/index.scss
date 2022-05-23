@@ -1,0 +1,16 @@
+details{
+  summary{
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0px 16px 15px -16px rgb(0 0 0 / 10%);
+    color: #666;
+    cursor: pointer;
+    &:hover {
+      background: #f9f9f9;
+      color: #0e80eb;
+    }
+  }
+}

@@ -26,7 +26,6 @@
 
 #### 使用 _clearable_ 属性即可得到一个可清空的输入框
 <br/>
-<Input-Demo3 />
 <div class="source">
   <Input-Demo3 />
 </div>

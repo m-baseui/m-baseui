@@ -47,17 +47,8 @@ export default {
     }
 
     const getSourceCode = async () => {
-      let msg = ''
-      const isDev = import.meta.env.MODE === "development";
-      if(isDev) {
-        msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
-        console.log(msg)
-        sourceCode.value = msg.default
-      } else {
-        msg = await import(`./${props.compName}/${props.demoName}.vue?raw`)
-        console.log(msg)
-        sourceCode.value = msg.default
-      }
+      let msg = await import(/* @vite-ignore */ `./${props.compName}/${props.demoName}.vue?raw`)
+      sourceCode.value = msg.default
     }
 
     onMounted(() => {
