@@ -114,9 +114,35 @@
   border: 1px solid #fff;
   background: none;
   opacity: .5;
-  color: #0e80eb;
+  color: #555;
 }
 // 圆角
 .is-round{
   border-radius: 20px;
+}
+// 圆
+.is-circle{
+  border-radius: 50%;
+  padding: 12px;
+}
+.noText{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.icon-loading{
+  margin-right: 4px;
+  animation: rotating 2s linear infinite;
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -20,9 +20,9 @@
     <m-button leftIcon="icon-home"></m-button>
     <m-button type="primary" leftIcon="icon-edit"></m-button>
     <m-button type="success" leftIcon="icon-smile"></m-button>
-    <m-button type="danger" leftIcon="icon-add-circle"></m-button>
-    <m-button type="info" leftIcon="icon-telephone"></m-button>
-    <m-button type="warning" leftIcon="icon-image-text"></m-button>
+    <m-button type="danger" leftIcon="icon-add-circle" circle></m-button>
+    <m-button type="info" leftIcon="icon-telephone" circle></m-button>
+    <m-button type="warning" leftIcon="icon-image-text" circle></m-button>
     <m-button type="text" leftIcon="icon-ashbin">删除</m-button>
   </m-row>
 </template>
