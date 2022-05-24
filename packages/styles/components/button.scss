@@ -4,9 +4,14 @@
   display: inline-block;
   padding: 12px 20px;
   margin-left: 10px;
+  line-height: 1;
   border: 1px solid #d9d9d9;
+  box-sizing: border-box;
   background: #fff;
   color: #333;
+  white-space: nowrap;
+  outline: none;
+  font-size: 14px;
   cursor: pointer;
 }
 .m-button--default{
@@ -135,6 +140,7 @@
   margin-right: 0 !important;
 }
 .icon-loading{
+  display: inline-block;
   margin-right: 4px;
   animation: rotating 2s linear infinite;
   -webkit-animation: rotating 2s linear infinite;
@@ -162,4 +168,11 @@
 .m-button--mini{
   padding: 7px 15px;
   font-size: 12px;
+}
+
+.m-slot-prepend,.m-slot-append{
+  display: inline-block;
+  .m-button{
+    margin-left: 0;
+  }
 }

@@ -37,8 +37,14 @@ export default {
       type: Boolean,
       default: false
     },
-    leftIcon: String,
-    rightIcon: String,
+    leftIcon: {
+      type: String,
+      default: ""
+    },
+    rightIcon: {
+      type: String,
+      default: ""
+    },
     loading: {
       type: Boolean,
       default: false
