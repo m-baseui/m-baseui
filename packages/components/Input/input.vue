@@ -1,6 +1,6 @@
 <template>
   <div class="m-input-default">
-    <div class="m-slot-prepend">
+    <div class="m-slot-prepend" v-if="slot && slot.prepend">
       <slot name="prepend"></slot>
     </div>
     <div class="demo-input" :class="groupClass">
@@ -26,7 +26,7 @@
         @click="showPwd(type)">
       </i>
     </div>
-    <div class="m-slot-append">
+    <div class="m-slot-append" v-if="slot && slot.append">
       <slot name="append"></slot>
     </div>
   </div>
@@ -116,11 +116,11 @@ export default {
       emit('blur', e)
     }
     const handleChange = (e) => {
-      console.log(e);
       emit('change',e)
     }
 
     return {
+      slot,
       styleClass,
       groupClass,
       iptChange,

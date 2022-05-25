@@ -21,10 +21,10 @@ export default {
     const keywords = ref('')
     const iconData = ref(iconList.glyphs)
 
-    const search = (e) => {
+    const search = (event) => {
       iconData.value = []
       iconList.glyphs.filter(item => {
-        if(item.name.indexOf(e.target.value) != -1) {
+        if(item.name.indexOf(event) != -1) {
           iconData.value.push(item)
         }
       })
@@ -65,9 +65,8 @@ export default {
       margin-bottom: 1vh;
     }
     &:hover{
-      background-color:#409eff;
       i,span{
-        color:#fff;
+        color:#409eff;
       }
     }
   }
