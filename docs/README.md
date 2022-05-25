@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/timg2.jpg
+heroImage: /images/logo.png
 heroText: 基于Vue3的轻量级UI组件库
 tagline: 更小的体积，更快的响应，更强的拓展性
 actions:

@@ -20,3 +20,33 @@ details{
     }
   }
 }
+.home .hero .actions{
+  margin: 2.5rem auto;
+}
+.home .hero .action-button{
+  border-radius: 35px;
+  padding: 0.6rem 2rem;
+}
+.home .hero .action-button.primary{
+  margin-right: 50px;
+  background-color: #2BD9C2;
+  border-color: #2BD9C2;
+  &:hover{
+    background-color: #2BD9C2;
+    opacity: .7;
+  }
+}
+.home .hero .action-button.secondary{
+  color: #736f6f;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  &:hover{
+    background-color: transparent;
+    color: #2BD9C2;
+    border-color: #2BD9C2;
+  }
+}
+.home .hero img{
+  width: 200px;
+  margin: 5rem auto 1.5rem;
+}
