@@ -1,0 +1,1 @@
+import{_ as r,I as t,r as s,o as u,q as p}from"./app.a173c339.js";const m={setup(){return{value:t("")}}};function _(a,e,c,o,d,f){const l=s("m-input");return u(),p(l,{modelValue:o.value,"onUpdate:modelValue":e[0]||(e[0]=n=>o.value=n),placeholder:"\u7981\u7528\u72B6\u6001",disabled:""},null,8,["modelValue"])}var v=r(m,[["render",_],["__file","Demo2.vue"]]);export{v as default};

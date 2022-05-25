@@ -1,0 +1,1 @@
+import{_ as o,r as t,o as n,q as r,w as _,h as a}from"./app.a173c339.js";const c={},s=a("\u52A0\u8F7D\u4E2D");function m(f,i){const e=t("m-button");return n(),r(e,{type:"primary",loading:""},{default:_(()=>[s]),_:1})}var d=o(c,[["render",m],["__file","Demo4.vue"]]);export{d as default};

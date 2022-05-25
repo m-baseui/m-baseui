@@ -1,0 +1,1 @@
+const t={key:"v-3b097782",path:"/componentDocs/Layout.html",title:"Layout \u5E03\u5C40",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u57FA\u672C\u4F7F\u7528",slug:"\u57FA\u672C\u4F7F\u7528",children:[]}],git:{},filePathRelative:"componentDocs/Layout.md"};export{t as data};
